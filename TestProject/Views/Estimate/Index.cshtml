@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Estimate Exchange";
+}
+
+<h2>Estimate Exchange</h2>
+
+<form method="get" action="/api/estimate">
+    <div>
+        <label>Input Amount:</label>
+        <input type="number" name="inputAmount" step="any" required />
+    </div>
+    <div>
+        <label>Input Currency:</label>
+        <select name="inputCurrency">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="USDT">USDT</option>
+        </select>
+    </div>
+    <div>
+        <label>Output Currency:</label>
+        <select name="outputCurrency">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="USDT">USDT</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">Estimate</button>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Get Rates";
+}
+
+<h2>Get Rates</h2>
+
+<form method="get" action="/api/getRates">
+    <div>
+        <label>Base Currency:</label>
+        <select name="baseCurrency">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="USDT">USDT</option>
+        </select>
+    </div>
+    <div>
+        <label>Quote Currency:</label>
+        <select name="quoteCurrency">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="USDT">USDT</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">Get Rates</button>
+    </div>
+</form>
